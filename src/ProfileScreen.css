@@ -1,0 +1,156 @@
+.profileScreen {
+    position: relative;
+    height: 100vh;
+    color: white;
+    background: url("https://cdn.discordapp.com/attachments/852893329317822538/863434752920780820/download.jpg") 
+     center no-repeat ;
+    background-size: cover;
+}
+
+.profileScreen__body{
+    /* background-color: rgb(43, 40, 40); */
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+    max-width: 800px;
+
+}
+
+.profileScreen__info{
+    display: flex;
+}
+
+.profileScreen__details{
+    color: white;
+    margin-left: 25px;
+    flex: 1;
+}
+
+/* .profileScreen__signOut {
+    padding: 10px 20px;
+    margin-top: 5%;
+    font-size: 1rem;
+    width: 100%;
+    color: #fff;
+    background:rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-top:1px solid rgba(255, 255, 255, 0.1);
+    border-bottom:1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    z-index: 1;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    
+
+}
+.profileScreen__signOut:hover a{
+ letter-spacing: 3px;
+} */
+
+.profileScreen__signOut {
+    position: relative;
+    color: #00aced;
+    border: none;
+    z-index: 2;
+    background:rgba(255, 255, 255, 0.05);
+    padding: 10px 20px;
+    margin-top: 5%;
+    font-size: 1rem;
+    width: 100%;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .profileScreen__signOut:before,
+  .profileScreen__signOut:after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    border: 1px solid;
+    
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
+  .profileScreen__signOut:before{
+     top: 0;
+     left: 0;
+     border-bottom-color: transparent;
+     border-right-color: transparent;
+     border-top-color: #00aced;
+     border-left-color: #00aced;
+  }
+  .profileScreen__signOut:after{
+     bottom: 0;
+     right: 0;
+     border-top-color: transparent;
+     border-left-color: transparent;
+     border-bottom-color: #00aced;
+     border-right-color: #00aced;
+     
+  }
+  .profileScreen__signOut:hover:before,
+  .profileScreen__signOut:hover:after {
+    border-color: #00aced;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 5px #00aced, 0 0 5px #00aced inset;
+    
+  }
+  .profileScreen__signOut:hover:after{
+      letter-spacing: 4px;
+  }
+
+
+
+.profileScreen__plans{
+    margin-top: 20px;
+}
+
+.profileScreen__plans > h3{
+    border-bottom: 1px solid #282c2d;
+    padding-bottom: 10px;
+
+}
+
+.profileScreen__details > h2{
+
+    background-color: gray;
+    padding: 15px;
+    font-size: 15px;
+    padding-left: 20px;
+
+}
+
+.profileScreen__body > h1 {
+    
+    font-size: 60px;
+    font-weight: 400;
+    border-bottom: 1px solid #282c2d;
+    margin-bottom: 20px;
+}
+
+
+.profileScreen__info > img{
+    height: 100px;
+}
+
+.profileScreen__mentions{
+    font-size: 20px;
+    /* padding-top: 300px; */
+    bottom:0;
+    /* padding-left: 300px; */
+    /* margin-bottom: 20px; */
+    right:10;
+    position:absolute;
+    justify-content: center;
+
+    
+    
+} 

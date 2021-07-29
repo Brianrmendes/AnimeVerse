@@ -1,0 +1,71 @@
+.banner {
+    position: relative;
+    height: 600px;
+    color: white;
+    object-fit: contain;
+    
+}
+
+.banner__contents{
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 190px;
+   
+}
+
+.banner__title{
+    font-size: 4rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+    padding-top: 5rem;
+    -webkit-text-stroke: 2px black;
+    animation-duration: 1s;
+
+}
+
+.banner__description {
+    width: 70rem;
+    line-height: 1.3;
+    padding-top: 2.5rem;
+    font-size: 1.2rem;
+    max-width: 600px;
+    height: 80px;
+    -webkit-text-stroke: 0.3px #111 ;
+    letter-spacing: 1px;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    animation-duration: 1s;
+    
+    
+}
+
+.banner--fadeBottom{
+    height: 17rem;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37, 37, 37, 0.61),
+        #111
+    );
+}
+
+/* 
+.banner__button{
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    background-color: rgba(51, 51, 51, 0.5);
+    padding-bottom: 0.5rem;
+}
+
+.banner__button:hover{
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+} */

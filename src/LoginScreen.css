@@ -1,0 +1,175 @@
+.loginScreen {
+    position: relative;
+    height: 100%;
+    background: url("https://cdn.discordapp.com/attachments/852893329317822538/862595723819614239/New_Project_1.jpg")
+    center no-repeat;
+    background-size: cover;
+
+}
+
+
+
+.loginScreen__gradient{
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+    );
+
+}
+
+.loginScreen__logo{
+    position: fixed;
+    left: 0;
+    width: 150px;
+    object-fit: contain;
+    padding-left: 20px;
+    margin-top: 10px;
+
+}
+
+.loginScreen__body > h1 {
+    -webkit-text-stroke: 0.8px black;
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+
+.loginScreen__body > h2{
+    -webkit-text-stroke: 0.7px black;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.loginScreen__body > h3{
+    -webkit-text-stroke: 0.3px black;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.loginScreen__body{
+    position: absolute;
+    top: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+    left: 0;
+    right: 0;
+}
+
+.loginScreen__input > form > input {
+    padding: 10px;
+    outline-width: 0;
+    height: 30px;
+    width: 30%;
+    border: none;
+    width: 600px;
+}
+
+.loginScreen__input{
+    margin: 20px;
+}
+
+.loginScreen__getStarted{
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* .loginScreen__button{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+} */
+
+.loginScreen__button {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 0;
+    border-radius: none;
+    background:rgba(255, 255, 255, 0.05);
+}
+
+.loginScreen__button:before {
+    content: '';
+    /* background: linear-gradient(45deg, #E90B0B,#D31616,#BC2120
+    ,#A62C2B); */
+    background: linear-gradient(45deg, #f00a0a 0%, #8f0b14 74%);
+    
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    letter-spacing: 3px;
+}
+
+.loginScreen__button:active {
+    color: #000;
+    letter-spacing: 3px;
+}
+
+.loginScreen__button:active:after {
+    letter-spacing: 3px;
+    background: transparent;
+}
+
+.loginScreen__button:hover:before {
+    letter-spacing: 3px;
+    opacity: 1;
+}
+
+.loginScreen__button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg, #ff073a , #e50914);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

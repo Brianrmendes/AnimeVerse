@@ -1,0 +1,132 @@
+.signupScreen {
+  max-width: 300px;
+  padding: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.signupScreen > form > h1 {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.signupScreen__gray {
+  color: gray;
+}
+
+.signupScreen > form > h4 {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.signupScreen > form {
+  display: grid;
+  flex-direction: column;
+}
+
+.signupScreen > form > input {
+  outline-width: 0;
+  height: 40px;
+  margin-bottom: 14px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 15px;
+}
+
+/* .signupScreen > form > button{
+    padding: 16px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #e50914;
+
+} */
+
+.signupScreen__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+a{
+    padding: 16px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    margin: 40px 0;
+    color: #F21A1D;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50%;
+    border-radius: 5px;
+    width:89%;
+   
+}
+a:hover{
+    background: #F21A1D;
+    color: #050801;
+    box-shadow: 0 0 5px #F21A1D,
+                0 0 25px #F21A1D,
+                0 0 50px #F21A1D,
+                0 0 200px #F21A1D;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#F21A1D);
+    animation: animate1 1s linear infinite;
+}
+
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#F21A1D);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#F21A1D);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
